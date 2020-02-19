@@ -19,14 +19,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
-        
         let initValue = UserDefaults.standard.integer(forKey: "initValue")
         let portNumber = UserDefaults.standard.integer(forKey: "servicePort")
         self.service = EDOHostService(port: UInt16(portNumber),
                                       rootObject: Person(value: initValue),
                                       queue: DispatchQueue.main)
-        EDOHostNamingService.shared.start()
         return true
     }
     

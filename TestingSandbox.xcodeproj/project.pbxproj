@@ -15,14 +15,12 @@
 		A2CB6C3523FDB5B00006DA75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2CB6C3323FDB5B00006DA75 /* LaunchScreen.storyboard */; };
 		A2CB6C4023FDB5B10006DA75 /* TestingSandboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CB6C3F23FDB5B10006DA75 /* TestingSandboxTests.swift */; };
 		A2CB6C4B23FDB5B10006DA75 /* TestingSandboxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CB6C4A23FDB5B10006DA75 /* TestingSandboxUITests.swift */; };
-		A2CB6C8E23FDB8210006DA75 /* libeDistantObject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A2CB6C6D23FDB6C60006DA75 /* libeDistantObject.a */; platformFilter = ios; settings = {ATTRIBUTES = (Weak, ); }; };
-		A2CB6C8F23FDB8820006DA75 /* libeDistantObject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A2CB6C6D23FDB6C60006DA75 /* libeDistantObject.a */; platformFilter = ios; settings = {ATTRIBUTES = (Weak, ); }; };
-		A2CB6CC323FDDFDB0006DA75 /* libeDistantObject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A2CB6C6D23FDB6C60006DA75 /* libeDistantObject.a */; };
+		A2CB6CC323FDDFDB0006DA75 /* libeDistantObject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A2CB6C6D23FDB6C60006DA75 /* libeDistantObject.a */; settings = {ATTRIBUTES = (Weak, ); }; };
 		A2CB6CE823FDE3190006DA75 /* libTestingSandboxLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A2CB6CD423FDE2D00006DA75 /* libTestingSandboxLibrary.a */; };
 		A2CB6CEE23FDE3FE0006DA75 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CB6CE023FDE2F40006DA75 /* Person.swift */; };
 		A2CB6CEF23FDE4020006DA75 /* PersonProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CB6CE123FDE2F40006DA75 /* PersonProtocol.swift */; };
 		A2CB6CF223FDE78A0006DA75 /* StubbedPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CB6CF123FDE78A0006DA75 /* StubbedPerson.m */; };
-		A2CB6CF423FDEA140006DA75 /* libTestingSandboxLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A2CB6CD423FDE2D00006DA75 /* libTestingSandboxLibrary.a */; };
+		A2CB6D0823FDF84C0006DA75 /* libeDistantObject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A2CB6C6D23FDB6C60006DA75 /* libeDistantObject.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,20 +122,6 @@
 			remoteGlobalIDString = C55B85F62241AEAC00B568FA;
 			remoteInfo = DeviceUnitTests;
 		};
-		A2CB6C9023FDBC740006DA75 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A2CB6C5923FDB6C60006DA75 /* eDistantObject.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = C845026E20DD9D5D00D7350F;
-			remoteInfo = eDistantObject;
-		};
-		A2CB6C9223FDBC800006DA75 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A2CB6C5923FDB6C60006DA75 /* eDistantObject.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = C845026E20DD9D5D00D7350F;
-			remoteInfo = eDistantObject;
-		};
 		A2CB6CE923FDE3290006DA75 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A2CB6C5923FDB6C60006DA75 /* eDistantObject.xcodeproj */;
@@ -146,13 +130,6 @@
 			remoteInfo = eDistantObject;
 		};
 		A2CB6CEC23FDE3B80006DA75 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A2CB6C1D23FDB5AA0006DA75 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A2CB6CD323FDE2D00006DA75;
-			remoteInfo = TestingSandboxLibrary;
-		};
-		A2CB6CF523FDEA290006DA75 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A2CB6C1D23FDB5AA0006DA75 /* Project object */;
 			proxyType = 1;
@@ -213,7 +190,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2CB6C8F23FDB8820006DA75 /* libeDistantObject.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,8 +197,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2CB6CF423FDEA140006DA75 /* libTestingSandboxLibrary.a in Frameworks */,
-				A2CB6C8E23FDB8210006DA75 /* libeDistantObject.a in Frameworks */,
+				A2CB6D0823FDF84C0006DA75 /* libeDistantObject.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,7 +356,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				A2CB6C9123FDBC740006DA75 /* PBXTargetDependency */,
 				A2CB6C3D23FDB5B10006DA75 /* PBXTargetDependency */,
 			);
 			name = TestingSandboxTests;
@@ -400,8 +374,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				A2CB6CF623FDEA290006DA75 /* PBXTargetDependency */,
-				A2CB6C9323FDBC800006DA75 /* PBXTargetDependency */,
 				A2CB6C4823FDB5B10006DA75 /* PBXTargetDependency */,
 			);
 			name = TestingSandboxUITests;
@@ -646,18 +618,6 @@
 			target = A2CB6C2423FDB5AA0006DA75 /* TestingSandbox */;
 			targetProxy = A2CB6C4723FDB5B10006DA75 /* PBXContainerItemProxy */;
 		};
-		A2CB6C9123FDBC740006DA75 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = eDistantObject;
-			platformFilter = ios;
-			targetProxy = A2CB6C9023FDBC740006DA75 /* PBXContainerItemProxy */;
-		};
-		A2CB6C9323FDBC800006DA75 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = eDistantObject;
-			platformFilter = ios;
-			targetProxy = A2CB6C9223FDBC800006DA75 /* PBXContainerItemProxy */;
-		};
 		A2CB6CEA23FDE3290006DA75 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = eDistantObject;
@@ -667,11 +627,6 @@
 			isa = PBXTargetDependency;
 			target = A2CB6CD323FDE2D00006DA75 /* TestingSandboxLibrary */;
 			targetProxy = A2CB6CEC23FDE3B80006DA75 /* PBXContainerItemProxy */;
-		};
-		A2CB6CF623FDEA290006DA75 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A2CB6CD323FDE2D00006DA75 /* TestingSandboxLibrary */;
-			targetProxy = A2CB6CF523FDEA290006DA75 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -821,7 +776,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = (
-					vendor/eDistantObject/Service/Sources,
+					Vendor/eDistantObject/Service/Sources,
 					TestingSandboxLibrary,
 				);
 			};
@@ -847,7 +802,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = (
-					vendor/eDistantObject/Service/Sources,
+					Vendor/eDistantObject/Service/Sources,
 					TestingSandboxLibrary,
 				);
 			};
@@ -874,7 +829,7 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestingSandbox.app/TestingSandbox";
 				USER_HEADER_SEARCH_PATHS = (
-					vendor/eDistantObject/Service/Sources,
+					Vendor/eDistantObject/Service/Sources,
 					TestingSandboxLibrary,
 				);
 			};
@@ -901,7 +856,7 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestingSandbox.app/TestingSandbox";
 				USER_HEADER_SEARCH_PATHS = (
-					vendor/eDistantObject/Service/Sources,
+					Vendor/eDistantObject/Service/Sources,
 					TestingSandboxLibrary,
 				);
 			};
@@ -927,7 +882,7 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = TestingSandbox;
 				USER_HEADER_SEARCH_PATHS = (
-					vendor/eDistantObject/Service/Sources,
+					Vendor/eDistantObject/Service/Sources,
 					TestingSandboxLibrary,
 				);
 			};
@@ -953,7 +908,7 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = TestingSandbox;
 				USER_HEADER_SEARCH_PATHS = (
-					vendor/eDistantObject/Service/Sources,
+					Vendor/eDistantObject/Service/Sources,
 					TestingSandboxLibrary,
 				);
 			};
@@ -977,7 +932,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = vendor/eDistantObject/Service/Sources;
+				USER_HEADER_SEARCH_PATHS = Vendor/eDistantObject/Service/Sources;
 			};
 			name = Debug;
 		};
@@ -998,7 +953,7 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "TestingSandboxLibrary/TestingSandboxLibrary-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = vendor/eDistantObject/Service/Sources;
+				USER_HEADER_SEARCH_PATHS = Vendor/eDistantObject/Service/Sources;
 			};
 			name = Release;
 		};
