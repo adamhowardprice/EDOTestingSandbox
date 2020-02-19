@@ -29,9 +29,4 @@ class TestingSandboxTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testRemoteInvocation() {
-        launchAppWithPort(port: 1234, value: 10)
-        let service = EDOHostService(port: 2234, rootObject:self, queue:DispatchQueue.main)
-    }
-
 }

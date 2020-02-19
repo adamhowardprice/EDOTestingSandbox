@@ -8,5 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
-@interface StubbedPerson : NSObject
+@interface StubbedPerson: NSObject
+@property(readonly) int value;
++ (instancetype)allocPerson;
++ (instancetype)_allocPerson;
++ (instancetype)allocateDummy;
++ (int)classMethodWithInt:(int)value;
++ (StubbedPerson *)classMethodWithIdReturn:(int)value;
+- (instancetype)initWithValue:(int)value;
+
 @end

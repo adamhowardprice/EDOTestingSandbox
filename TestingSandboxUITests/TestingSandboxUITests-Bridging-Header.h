@@ -1,3 +1,3 @@
 #import "EDOHostService.h"
-#import "EDOHostNamingService.h"
+#import "EDOClientService.h"
 #import "StubbedPerson.h"

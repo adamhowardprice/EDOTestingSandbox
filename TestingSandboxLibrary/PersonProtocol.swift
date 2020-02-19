@@ -11,8 +11,8 @@ public protocol StubbedPersonExtension {
 }
 
 @objc
-extension StubbedPerson: StubbedPersonExtension {
-    public func remoteProtocol() -> RemotePersonProtocol {
-        return Person()
-    }
+extension StubbedPerson : StubbedPersonExtension {
+  public func remoteProtocol() -> RemotePersonProtocol {
+    return Person()
+  }
 }
