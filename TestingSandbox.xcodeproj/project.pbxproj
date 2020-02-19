@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,8 @@
 		A2CB6C3523FDB5B00006DA75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2CB6C3323FDB5B00006DA75 /* LaunchScreen.storyboard */; };
 		A2CB6C4023FDB5B10006DA75 /* TestingSandboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CB6C3F23FDB5B10006DA75 /* TestingSandboxTests.swift */; };
 		A2CB6C4B23FDB5B10006DA75 /* TestingSandboxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CB6C4A23FDB5B10006DA75 /* TestingSandboxUITests.swift */; };
+		A2CB6C8E23FDB8210006DA75 /* libeDistantObject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A2CB6C6D23FDB6C60006DA75 /* libeDistantObject.a */; platformFilter = ios; settings = {ATTRIBUTES = (Weak, ); }; };
+		A2CB6C8F23FDB8820006DA75 /* libeDistantObject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A2CB6C6D23FDB6C60006DA75 /* libeDistantObject.a */; platformFilter = ios; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +118,20 @@
 			remoteGlobalIDString = C55B85F62241AEAC00B568FA;
 			remoteInfo = DeviceUnitTests;
 		};
+		A2CB6C9023FDBC740006DA75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A2CB6C5923FDB6C60006DA75 /* eDistantObject.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C845026E20DD9D5D00D7350F;
+			remoteInfo = eDistantObject;
+		};
+		A2CB6C9223FDBC800006DA75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A2CB6C5923FDB6C60006DA75 /* eDistantObject.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C845026E20DD9D5D00D7350F;
+			remoteInfo = eDistantObject;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -148,6 +164,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2CB6C8F23FDB8820006DA75 /* libeDistantObject.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,6 +172,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2CB6C8E23FDB8210006DA75 /* libeDistantObject.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,6 +187,7 @@
 				A2CB6C3E23FDB5B10006DA75 /* TestingSandboxTests */,
 				A2CB6C4923FDB5B10006DA75 /* TestingSandboxUITests */,
 				A2CB6C2623FDB5AA0006DA75 /* Products */,
+				A2CB6C8123FDB8210006DA75 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -249,6 +268,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		A2CB6C8123FDB8210006DA75 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -280,6 +306,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				A2CB6C9123FDBC740006DA75 /* PBXTargetDependency */,
 				A2CB6C3D23FDB5B10006DA75 /* PBXTargetDependency */,
 			);
 			name = TestingSandboxTests;
@@ -298,6 +325,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				A2CB6C9323FDBC800006DA75 /* PBXTargetDependency */,
 				A2CB6C4823FDB5B10006DA75 /* PBXTargetDependency */,
 			);
 			name = TestingSandboxUITests;
@@ -500,13 +528,27 @@
 /* Begin PBXTargetDependency section */
 		A2CB6C3D23FDB5B10006DA75 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			platformFilter = ios;
 			target = A2CB6C2423FDB5AA0006DA75 /* TestingSandbox */;
 			targetProxy = A2CB6C3C23FDB5B10006DA75 /* PBXContainerItemProxy */;
 		};
 		A2CB6C4823FDB5B10006DA75 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			platformFilter = ios;
 			target = A2CB6C2423FDB5AA0006DA75 /* TestingSandbox */;
 			targetProxy = A2CB6C4723FDB5B10006DA75 /* PBXContainerItemProxy */;
+		};
+		A2CB6C9123FDBC740006DA75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = eDistantObject;
+			platformFilter = ios;
+			targetProxy = A2CB6C9023FDBC740006DA75 /* PBXContainerItemProxy */;
+		};
+		A2CB6C9323FDBC800006DA75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = eDistantObject;
+			platformFilter = ios;
+			targetProxy = A2CB6C9223FDBC800006DA75 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
