@@ -1,0 +1,3 @@
+[submodule "Vendor/eDistantObject"]
+	path = Vendor/eDistantObject
+	url = https://github.com/google/eDistantObject.git

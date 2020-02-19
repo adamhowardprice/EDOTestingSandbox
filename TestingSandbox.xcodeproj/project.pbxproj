@@ -32,6 +32,90 @@
 			remoteGlobalIDString = A2CB6C2423FDB5AA0006DA75;
 			remoteInfo = TestingSandbox;
 		};
+		A2CB6C6823FDB6C60006DA75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A2CB6C5923FDB6C60006DA75 /* eDistantObject.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C845026520DD9D2E00D7350F;
+			remoteInfo = ChannelLib;
+		};
+		A2CB6C6A23FDB6C60006DA75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A2CB6C5923FDB6C60006DA75 /* eDistantObject.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C88B8A7B21ADD3BE00DDE607;
+			remoteInfo = MeasureLib;
+		};
+		A2CB6C6C23FDB6C60006DA75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A2CB6C5923FDB6C60006DA75 /* eDistantObject.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C845027720DD9D5D00D7350F;
+			remoteInfo = eDistantObject;
+		};
+		A2CB6C6E23FDB6C60006DA75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A2CB6C5923FDB6C60006DA75 /* eDistantObject.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C845033420DDA11D00D7350F;
+			remoteInfo = ChannelTests;
+		};
+		A2CB6C7023FDB6C60006DA75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A2CB6C5923FDB6C60006DA75 /* eDistantObject.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C88B8A8921ADD3FD00DDE607;
+			remoteInfo = MeasureTests;
+		};
+		A2CB6C7223FDB6C60006DA75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A2CB6C5923FDB6C60006DA75 /* eDistantObject.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C845034520DDA1E800D7350F;
+			remoteInfo = TestsHost;
+		};
+		A2CB6C7423FDB6C60006DA75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A2CB6C5923FDB6C60006DA75 /* eDistantObject.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C845037820DDA40A00D7350F;
+			remoteInfo = ServiceUITests;
+		};
+		A2CB6C7623FDB6C60006DA75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A2CB6C5923FDB6C60006DA75 /* eDistantObject.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C84503A220DDAEF500D7350F;
+			remoteInfo = ServiceTests;
+		};
+		A2CB6C7823FDB6C60006DA75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A2CB6C5923FDB6C60006DA75 /* eDistantObject.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C84503B620DDB03E00D7350F;
+			remoteInfo = ServicePerfTests;
+		};
+		A2CB6C7A23FDB6C60006DA75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A2CB6C5923FDB6C60006DA75 /* eDistantObject.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C84503C620DDB07A00D7350F;
+			remoteInfo = TestsBundle;
+		};
+		A2CB6C7C23FDB6C60006DA75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A2CB6C5923FDB6C60006DA75 /* eDistantObject.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C52D85942220C44300E86E60;
+			remoteInfo = DeviceLib;
+		};
+		A2CB6C7E23FDB6C60006DA75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A2CB6C5923FDB6C60006DA75 /* eDistantObject.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C55B85F62241AEAC00B568FA;
+			remoteInfo = DeviceUnitTests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +133,7 @@
 		A2CB6C4623FDB5B10006DA75 /* TestingSandboxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestingSandboxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2CB6C4A23FDB5B10006DA75 /* TestingSandboxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingSandboxUITests.swift; sourceTree = "<group>"; };
 		A2CB6C4C23FDB5B10006DA75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2CB6C5923FDB6C60006DA75 /* eDistantObject.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = eDistantObject.xcodeproj; path = Vendor/eDistantObject/eDistantObject.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				A2CB6C2723FDB5AA0006DA75 /* TestingSandbox */,
+				A2CB6C5823FDB6B60006DA75 /* Vendor */,
 				A2CB6C3E23FDB5B10006DA75 /* TestingSandboxTests */,
 				A2CB6C4923FDB5B10006DA75 /* TestingSandboxUITests */,
 				A2CB6C2623FDB5AA0006DA75 /* Products */,
@@ -134,6 +220,33 @@
 				A2CB6C4C23FDB5B10006DA75 /* Info.plist */,
 			);
 			path = TestingSandboxUITests;
+			sourceTree = "<group>";
+		};
+		A2CB6C5823FDB6B60006DA75 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				A2CB6C5923FDB6C60006DA75 /* eDistantObject.xcodeproj */,
+			);
+			name = Vendor;
+			sourceTree = "<group>";
+		};
+		A2CB6C5A23FDB6C60006DA75 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A2CB6C6923FDB6C60006DA75 /* libChannelLib.a */,
+				A2CB6C6B23FDB6C60006DA75 /* libMeasureLib.a */,
+				A2CB6C6D23FDB6C60006DA75 /* libeDistantObject.a */,
+				A2CB6C6F23FDB6C60006DA75 /* ChannelTests.xctest */,
+				A2CB6C7123FDB6C60006DA75 /* MeasureTests.xctest */,
+				A2CB6C7323FDB6C60006DA75 /* TestsHost.app */,
+				A2CB6C7523FDB6C60006DA75 /* ServiceUITests.xctest */,
+				A2CB6C7723FDB6C60006DA75 /* ServiceTests.xctest */,
+				A2CB6C7923FDB6C60006DA75 /* ServicePerfTests.xctest */,
+				A2CB6C7B23FDB6C60006DA75 /* libTestsBundle.a */,
+				A2CB6C7D23FDB6C60006DA75 /* libDeviceLib.a */,
+				A2CB6C7F23FDB6C60006DA75 /* DeviceUnitTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,6 +339,12 @@
 			mainGroup = A2CB6C1C23FDB5AA0006DA75;
 			productRefGroup = A2CB6C2623FDB5AA0006DA75 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A2CB6C5A23FDB6C60006DA75 /* Products */;
+					ProjectRef = A2CB6C5923FDB6C60006DA75 /* eDistantObject.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				A2CB6C2423FDB5AA0006DA75 /* TestingSandbox */,
@@ -234,6 +353,93 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		A2CB6C6923FDB6C60006DA75 /* libChannelLib.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libChannelLib.a;
+			remoteRef = A2CB6C6823FDB6C60006DA75 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A2CB6C6B23FDB6C60006DA75 /* libMeasureLib.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libMeasureLib.a;
+			remoteRef = A2CB6C6A23FDB6C60006DA75 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A2CB6C6D23FDB6C60006DA75 /* libeDistantObject.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libeDistantObject.a;
+			remoteRef = A2CB6C6C23FDB6C60006DA75 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A2CB6C6F23FDB6C60006DA75 /* ChannelTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChannelTests.xctest;
+			remoteRef = A2CB6C6E23FDB6C60006DA75 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A2CB6C7123FDB6C60006DA75 /* MeasureTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = MeasureTests.xctest;
+			remoteRef = A2CB6C7023FDB6C60006DA75 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A2CB6C7323FDB6C60006DA75 /* TestsHost.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = TestsHost.app;
+			remoteRef = A2CB6C7223FDB6C60006DA75 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A2CB6C7523FDB6C60006DA75 /* ServiceUITests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ServiceUITests.xctest;
+			remoteRef = A2CB6C7423FDB6C60006DA75 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A2CB6C7723FDB6C60006DA75 /* ServiceTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ServiceTests.xctest;
+			remoteRef = A2CB6C7623FDB6C60006DA75 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A2CB6C7923FDB6C60006DA75 /* ServicePerfTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ServicePerfTests.xctest;
+			remoteRef = A2CB6C7823FDB6C60006DA75 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A2CB6C7B23FDB6C60006DA75 /* libTestsBundle.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libTestsBundle.a;
+			remoteRef = A2CB6C7A23FDB6C60006DA75 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A2CB6C7D23FDB6C60006DA75 /* libDeviceLib.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libDeviceLib.a;
+			remoteRef = A2CB6C7C23FDB6C60006DA75 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A2CB6C7F23FDB6C60006DA75 /* DeviceUnitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = DeviceUnitTests.xctest;
+			remoteRef = A2CB6C7E23FDB6C60006DA75 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		A2CB6C2323FDB5AA0006DA75 /* Resources */ = {
