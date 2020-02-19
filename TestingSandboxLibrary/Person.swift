@@ -1,11 +1,13 @@
 import Foundation
 
-class Person {
+public class Person: RemotePersonProtocol {
     
     let firstName = "Adam"
     let lastName = "Price"
     
-    func sayMyName() -> String {
+    public init() {}
+    
+    public func sayMyName() -> String {
         return "My name is \(firstName) \(lastName)"
     }
 }
