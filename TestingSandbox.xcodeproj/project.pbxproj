@@ -17,6 +17,8 @@
 		A2CB6C4B23FDB5B10006DA75 /* TestingSandboxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CB6C4A23FDB5B10006DA75 /* TestingSandboxUITests.swift */; };
 		A2CB6C8E23FDB8210006DA75 /* libeDistantObject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A2CB6C6D23FDB6C60006DA75 /* libeDistantObject.a */; platformFilter = ios; settings = {ATTRIBUTES = (Weak, ); }; };
 		A2CB6C8F23FDB8820006DA75 /* libeDistantObject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A2CB6C6D23FDB6C60006DA75 /* libeDistantObject.a */; platformFilter = ios; settings = {ATTRIBUTES = (Weak, ); }; };
+		A2CB6CC323FDDFDB0006DA75 /* libeDistantObject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A2CB6C6D23FDB6C60006DA75 /* libeDistantObject.a */; };
+		A2CB6CC623FDE10D0006DA75 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CB6CC523FDE10D0006DA75 /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -132,6 +134,13 @@
 			remoteGlobalIDString = C845026E20DD9D5D00D7350F;
 			remoteInfo = eDistantObject;
 		};
+		A2CB6CB623FDDFC90006DA75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A2CB6C5923FDB6C60006DA75 /* eDistantObject.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C845026E20DD9D5D00D7350F;
+			remoteInfo = eDistantObject;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -150,6 +159,8 @@
 		A2CB6C4A23FDB5B10006DA75 /* TestingSandboxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingSandboxUITests.swift; sourceTree = "<group>"; };
 		A2CB6C4C23FDB5B10006DA75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A2CB6C5923FDB6C60006DA75 /* eDistantObject.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = eDistantObject.xcodeproj; path = Vendor/eDistantObject/eDistantObject.xcodeproj; sourceTree = "<group>"; };
+		A2CB6CC423FDDFF70006DA75 /* TestingSandbox-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestingSandbox-Bridging-Header.h"; sourceTree = "<group>"; };
+		A2CB6CC523FDE10D0006DA75 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +168,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2CB6CC323FDDFDB0006DA75 /* libeDistantObject.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,6 +223,8 @@
 				A2CB6C3323FDB5B00006DA75 /* LaunchScreen.storyboard */,
 				A2CB6C3623FDB5B00006DA75 /* Info.plist */,
 				A2CB6C3023FDB5B00006DA75 /* Preview Content */,
+				A2CB6CC423FDDFF70006DA75 /* TestingSandbox-Bridging-Header.h */,
+				A2CB6CC523FDE10D0006DA75 /* Person.swift */,
 			);
 			path = TestingSandbox;
 			sourceTree = "<group>";
@@ -289,6 +303,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				A2CB6CB723FDDFC90006DA75 /* PBXTargetDependency */,
 			);
 			name = TestingSandbox;
 			productName = TestingSandbox;
@@ -503,6 +518,7 @@
 			files = (
 				A2CB6C2923FDB5AA0006DA75 /* AppDelegate.swift in Sources */,
 				A2CB6C2B23FDB5AA0006DA75 /* SceneDelegate.swift in Sources */,
+				A2CB6CC623FDE10D0006DA75 /* Person.swift in Sources */,
 				A2CB6C2D23FDB5AA0006DA75 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -549,6 +565,11 @@
 			name = eDistantObject;
 			platformFilter = ios;
 			targetProxy = A2CB6C9223FDBC800006DA75 /* PBXContainerItemProxy */;
+		};
+		A2CB6CB723FDDFC90006DA75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = eDistantObject;
+			targetProxy = A2CB6CB623FDDFC90006DA75 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -693,8 +714,10 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.butterflynetinc.TestingSandbox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TestingSandbox/TestingSandbox-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = vendor/eDistantObject/Service/Sources;
 			};
 			name = Debug;
 		};
@@ -713,8 +736,10 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.butterflynetinc.TestingSandbox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TestingSandbox/TestingSandbox-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = vendor/eDistantObject/Service/Sources;
 			};
 			name = Release;
 		};
