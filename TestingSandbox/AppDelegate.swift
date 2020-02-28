@@ -13,17 +13,22 @@ import TestingSandboxLibrary
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var service: EDOHostService?
+    var person: Person?
     
     override init() {
         self.service = nil
     }
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        let initValue = UserDefaults.standard.integer(forKey: "initValue")
-        let portNumber = UserDefaults.standard.integer(forKey: "servicePort")
-        self.service = EDOHostService(port: UInt16(portNumber),
-                                      rootObject: Person(value: initValue),
-                                      queue: DispatchQueue.main)
+        if CommandLine.arguments.contains("--uitesting") {
+            let initValue = UserDefaults.standard.integer(forKey: "initValue")
+            let portNumber = UserDefaults.standard.integer(forKey: "servicePort")
+            self.person = Person(value: initValue)
+            self.service = EDOHostService(port: UInt16(portNumber),
+                                          rootObject: self.person,
+                                          queue: DispatchQueue.main)
+        }
+        
         return true
     }
     
@@ -41,6 +46,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
     
+    func applicationWillTerminate(_ application: UIApplication) {
+        self.service?.invalidate()
+    }
     
 }
 

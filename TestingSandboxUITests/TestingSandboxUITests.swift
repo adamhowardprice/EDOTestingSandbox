@@ -19,15 +19,16 @@ class TestingSandboxUITests: XCTestCase {
             String(format: "%d", port),
             String("-initValue"),
             String(format: "%d", value)]
+        application.launchArguments.append("--uitesting")
         application.launch()
         return application
     }
 
     func testRemoteInvocation() {
         launchAppWithPort(port: 1234, value: 10)
-        let remoteObject = EDOClientService.rootObject(withPort: 1234)
-        let testPerson = unsafeBitCast(remoteObject, to: StubbedPersonExtension.self)
-        let swiftClass: RemotePersonProtocol = testPerson.remoteProtocol()
-        XCTAssertEqual(swiftClass.sayMyName(), "My name is Adam Price, my value is 10")
+        let remoteObject = EDOClientService.rootObject(withPort: 1234) as! NSObjectProtocol
+        let person = unsafeBitCast(remoteObject, to: Person.self)
+        let output = person.perform(#selector(Person.sayMyName))?.takeUnretainedValue() as! String
+        XCTAssertEqual(output, "My name is Adam Price, my value is 10")
     }
 }

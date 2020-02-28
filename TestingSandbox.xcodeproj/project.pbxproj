@@ -15,7 +15,7 @@
 		A2CB6C3523FDB5B00006DA75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2CB6C3323FDB5B00006DA75 /* LaunchScreen.storyboard */; };
 		A2CB6C4023FDB5B10006DA75 /* TestingSandboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CB6C3F23FDB5B10006DA75 /* TestingSandboxTests.swift */; };
 		A2CB6C4B23FDB5B10006DA75 /* TestingSandboxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CB6C4A23FDB5B10006DA75 /* TestingSandboxUITests.swift */; };
-		A2CB6CC323FDDFDB0006DA75 /* libeDistantObject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A2CB6C6D23FDB6C60006DA75 /* libeDistantObject.a */; settings = {ATTRIBUTES = (Weak, ); }; };
+		A2CB6CC323FDDFDB0006DA75 /* libeDistantObject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A2CB6C6D23FDB6C60006DA75 /* libeDistantObject.a */; settings = {ATTRIBUTES = (Required, ); }; };
 		A2CB6CE823FDE3190006DA75 /* libTestingSandboxLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A2CB6CD423FDE2D00006DA75 /* libTestingSandboxLibrary.a */; };
 		A2CB6CEE23FDE3FE0006DA75 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CB6CE023FDE2F40006DA75 /* Person.swift */; };
 		A2CB6CEF23FDE4020006DA75 /* PersonProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CB6CE123FDE2F40006DA75 /* PersonProtocol.swift */; };
